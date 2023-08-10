@@ -30,8 +30,10 @@
         <br><br>
         Amount : <input type="number" name="amount" id="amount" ngModel placeholder="Enter the amount"><br><br>
         <button id="submitButton" class="button">SUBMIT</button><br><br>
+	  <div id="result">
         <label for="resValue" name="resValue" id="resValue">{{fromCurrency | currencypipe: toCurrency : amount |number: '0.2'}}</label>
-      </div>
+	  </div>      
+        </div>
      
     </form>
   </div>
